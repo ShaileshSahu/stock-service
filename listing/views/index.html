@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <style>
+      body {
+        margin-top: 1rem;
+        padding: 3rem;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .headline {
+        color: aquamarine;
+        background-color: black;
+        text-align: center;
+      }
+
+      .content {
+        display: flex;
+      }
+
+      .content div {
+        padding: 1rem;
+      }
+
+      .content:first-child {
+        flex-flow: column;
+      }
+
+      .content:last-child {
+        font-size: 1rem;
+      }
+
+      .content:last-child::first-letter {
+        font-size: 3rem;
+        font-weight: 500;
+      }
+
+      footer {
+        background-color: antiquewhite;
+        text-align: center;
+        padding: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="headline">Corona</h1>
+    </header>
+    <div class="content">
+      <div>
+        <video width="450" controls muted="true" autoplay>
+          <source
+            src="http://localhost:8082/v1/coronas/videos"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <div>
+        Coronavirus in India LIVE Updates: US is eager to rope in Indian
+        investigators and experts to conduct clinical trials on the safety and
+        efficacy of Covid-19 therapeutics, said top US health advisor Dr Anthony
+        Fauci. US has meanwhile announced its plans to distribute vaccines
+        across the world in which 25 million doses will be distributed
+        immediately, including in India. Prime Minister Narendra Modi on
+        Thursday spoke to US Vice President Kamala Harris on the move and
+        thanked the United States. As lockdown and curfew-like restrictions
+        continue to be in place in most of India, Maharashtra on Thursday
+        announced its unlock plan, only to make a U-turn later and say that
+        restrictions will continue for now. Follow live updates on coronavirus
+        news in India: The DCGI has granted permission to the Serum Institute of
+        India (SII) to manufacture the Sputnik Covid-19 vaccine in India for
+        examination, test and analysis with certain conditions, official sources
+        said on Friday. The Pune-based firm has collaborated with Gamaleya
+        Research Institute of Epidemiology and Microbiology, Moscow in Russia
+        for developing Sputnik V at its licensed Hadapsar facility. AAP MLA
+        Atishi said on Friday that it has been 12 days since the stock of
+        Covaxin was over for the 18-44 age group and now Delhi will run out of
+        vaccine supply for the 45-plus category by Sunday. During her daily
+        vaccination bulletin, Atishi said that the Delhi government had about
+        10,000 Covaxin shots till Friday morning.
+      </div>
+    </div>
+
+    <footer>Generated to test out flow of system !!</footer>
+  </body>
+</html>
