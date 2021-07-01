@@ -289,51 +289,11 @@ function rotateClockNode(list, k){
 
 	return list;
 	
-
-}
-/* Function to reverse the linked list */
-function reverse(node) {
-    var prev = null;
-    var current = node;
-    var next = null;
-        while (current != null) {
-            next = current.next;
-            current.next = prev;
-            prev = current;
-            current = next;
-        }
-        node = prev;
-        return node;
-}
-
-var removeElements = function(head, val) {
-    if(!head  ) return head;
-    let current=head, previous=null;
-    while (current != null){
-        let next = current && current['next'] ? currrent.next : null;
-          console.log('element', current.data,val); 
-	  if (current.data == val){
-            if(previous){
-                previous.next = next;
-            	console.log('head',head);
-		    console.log('previous', previous);
-	    } else {
-		head = head.next
-	    }
-        } else {
-            previous=current;
-        }
-        current = next;
-
-    }
-
-    return head;
-};
 const sortedL2 = new LinkedList();
 const sortedL1 = new LinkedList();
-sortedL1.insertLast(7);
+sortedL1.insertLast(1);
 console.log('sorted l1', sortedL1.head);
-//sortedL2.insertLast(1);
+sortedL2.insertLast(2);
 //sortedL2.insertLast(3);
 //sortedL2.insertLast(4);
 //console.log('sorted L2', sortedL2);
@@ -344,4 +304,5 @@ console.log('sorted l1', sortedL1.head);
 //console.log(rotateClockNode(sortedL1.head,2))
 //console.log(rotateNode(sortedL1.head,4));
 //console.log(swapPair(sortedL1.head));
-console.log(removeElements(sortedL1.head, 7));
+//console.log(removeElements(sortedL1.head, 7));
+	console.log(isPalidrome(sortedL1.head));
