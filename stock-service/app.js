@@ -31,4 +31,4 @@ fastify.get("/crypto", async (data, reply) => {
   
 });
 
-fastify.listen(process.ENV || 1500);
+fastify.listen(process.env.PORT || 1500);
