@@ -17,7 +17,11 @@ const ajaxCall = async ({token,url,method}) => {
     });
 };
 
+fastify.get("/", async (data, reply) => {
 
+    return {health: 'true'};
+  
+});
 
 fastify.get("/crypto", async (data, reply) => {
     const content = cache.get('content');
